@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class MainScreenController: UITableViewController, UISearchResultsUpdating {
     
     private var response: Movies? {
@@ -40,6 +41,7 @@ class MainScreenController: UITableViewController, UISearchResultsUpdating {
             networkManager.getMovies(searchTerm: text) { result in
                 switch result{
                 case .success(let movies):
+                    self.response = movies
                     print("Found \(movies.Search.count) search results")
                     for searchResult in movies.Search{
                         print("Title: \(searchResult.Title)")
@@ -58,10 +60,11 @@ class MainScreenController: UITableViewController, UISearchResultsUpdating {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return response?.Search.count ?? .zero
     }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let mov = response?.Search[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MoviesSearchTableViewCell
-        cell.movieNameLabel.text = mov?.Title
+        let result = response?.Search[indexPath.row]
+        cell.movieNameLabel.text = result?.Title
         return cell
     }
 
