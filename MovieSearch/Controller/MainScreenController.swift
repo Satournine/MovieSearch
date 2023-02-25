@@ -17,6 +17,8 @@ class MainScreenController: UITableViewController, UISearchResultsUpdating {
             }
         }
     }
+    private var selectedMovie: Search?
+    
     
     var networkManager = NetworkManager()
 
@@ -66,6 +68,17 @@ class MainScreenController: UITableViewController, UISearchResultsUpdating {
         let result = response?.Search[indexPath.row]
         cell.movieNameLabel.text = result?.Title
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedMovie = response?.Search[indexPath.row]
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let movieDetailViewController = storyBoard.instantiateViewController(withIdentifier: "MovieDetailView") as? MovieDetailViewController else{return}
+        guard let movieTitle = selectedMovie?.Title else{return}
+        print(movieTitle)
+        movieDetailViewController.updateUI(movieName: movieTitle)
+        //navigationController?.pushViewController(movieDetailViewController, animated: true)
+        navigationController?.present(movieDetailViewController, animated: true)
     }
 
 

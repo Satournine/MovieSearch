@@ -11,6 +11,7 @@ import Alamofire
 class NetworkManager: ObservableObject{
     
     @Published var movie = [Search]()
+    @Published var details = [Details]()
     
     func getMovies(searchTerm: String, completion: @escaping (Result<Movies, Error>) -> Void){
         let url = "http://www.omdbapi.com/?apikey=c618bcf0&s=\(searchTerm)"
@@ -38,4 +39,24 @@ class NetworkManager: ObservableObject{
             }
         }
     }
+    
+    func getDetails(detailsOf: String, completion: @escaping (Result<Details, Error>) -> Void){
+        var url = "http://www.omdbapi.com/?apikey=c618bcf0&t=\(detailsOf)"
+        url = url.replacingOccurrences(of: " ", with: "%20")
+        AF.request(url).responseDecodable(of: Details.self){ response in
+            switch response.result{
+            case .success(let data):
+                completion(.success(data))
+            case .failure(let error):
+                completion(.failure(error))
+
+            }
+
+            
+            
+        }
+    }
+    
+    
+    
 }
