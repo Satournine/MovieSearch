@@ -64,22 +64,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ptA-R7-TVW">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ptA-R7-TVW">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="kKN-wY-abj"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C6t-AE-tTR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="C6t-AE-tTR">
                                 <rect key="frame" x="20" y="408" width="374" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="ibZ-G4-PRU"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="DamascusSemiBold" family="Damascus" pointSize="34"/>
+                                <fontDescription key="fontDescription" name="DamascusSemiBold" family="Damascus" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHh-aT-RvN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHh-aT-RvN">
                                 <rect key="frame" x="20" y="461" width="374" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="XIA-7t-u7R"/>
@@ -89,18 +89,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NoJ-j4-ARx">
-                                <rect key="frame" x="20" y="514" width="374" height="150"/>
+                                <rect key="frame" x="20" y="514" width="374" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="C5H-sy-qqQ"/>
+                                    <constraint firstAttribute="height" constant="100" id="YHi-AY-uME"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFQ-3S-9o1">
-                                <rect key="frame" x="20" y="672" width="374" height="45"/>
+                                <rect key="frame" x="20" y="622" width="374" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="GrM-hv-b3w"/>
+                                    <constraint firstAttribute="height" constant="45" id="htO-5x-Pxw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -111,19 +111,19 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="fLT-AI-35N" firstAttribute="trailing" secondItem="HHh-aT-RvN" secondAttribute="trailing" constant="20" id="2mZ-BK-WCp"/>
-                            <constraint firstItem="NoJ-j4-ARx" firstAttribute="top" secondItem="HHh-aT-RvN" secondAttribute="bottom" constant="8" symbolic="YES" id="3es-wy-PAA"/>
-                            <constraint firstItem="NoJ-j4-ARx" firstAttribute="leading" secondItem="fLT-AI-35N" secondAttribute="leading" constant="20" id="7Op-Tl-9oy"/>
+                            <constraint firstItem="NoJ-j4-ARx" firstAttribute="top" secondItem="HHh-aT-RvN" secondAttribute="bottom" constant="8" symbolic="YES" id="7Wh-og-wX2"/>
                             <constraint firstItem="C6t-AE-tTR" firstAttribute="leading" secondItem="fLT-AI-35N" secondAttribute="leading" constant="20" id="BIV-Vc-faH"/>
                             <constraint firstItem="ptA-R7-TVW" firstAttribute="top" secondItem="Ijz-Jn-nby" secondAttribute="top" id="EV8-Ga-Aqd"/>
-                            <constraint firstItem="C6t-AE-tTR" firstAttribute="top" secondItem="ptA-R7-TVW" secondAttribute="bottom" constant="8" symbolic="YES" id="F0m-Qz-xB2"/>
-                            <constraint firstItem="GFQ-3S-9o1" firstAttribute="leading" secondItem="fLT-AI-35N" secondAttribute="leading" constant="20" id="VsW-f3-9oH"/>
+                            <constraint firstItem="fLT-AI-35N" firstAttribute="trailing" secondItem="GFQ-3S-9o1" secondAttribute="trailing" constant="20" id="MrI-wZ-mkR"/>
                             <constraint firstItem="ptA-R7-TVW" firstAttribute="leading" secondItem="fLT-AI-35N" secondAttribute="leading" id="VyK-6y-g5B"/>
+                            <constraint firstItem="NoJ-j4-ARx" firstAttribute="leading" secondItem="fLT-AI-35N" secondAttribute="leading" constant="20" id="b7A-iE-3Xw"/>
                             <constraint firstItem="ptA-R7-TVW" firstAttribute="trailing" secondItem="fLT-AI-35N" secondAttribute="trailing" id="bvA-Gr-kOI"/>
-                            <constraint firstItem="fLT-AI-35N" firstAttribute="trailing" secondItem="GFQ-3S-9o1" secondAttribute="trailing" constant="20" id="hB3-6c-mNe"/>
-                            <constraint firstItem="GFQ-3S-9o1" firstAttribute="top" secondItem="NoJ-j4-ARx" secondAttribute="bottom" constant="8" symbolic="YES" id="i7l-wK-JJ6"/>
+                            <constraint firstItem="GFQ-3S-9o1" firstAttribute="top" secondItem="NoJ-j4-ARx" secondAttribute="bottom" constant="8" symbolic="YES" id="f22-8G-B6j"/>
+                            <constraint firstItem="fLT-AI-35N" firstAttribute="trailing" secondItem="NoJ-j4-ARx" secondAttribute="trailing" constant="20" id="iM5-hn-2CL"/>
+                            <constraint firstItem="C6t-AE-tTR" firstAttribute="top" secondItem="ptA-R7-TVW" secondAttribute="bottom" constant="8" symbolic="YES" id="m96-bk-zkR"/>
                             <constraint firstItem="fLT-AI-35N" firstAttribute="trailing" secondItem="C6t-AE-tTR" secondAttribute="trailing" constant="20" id="mV7-k1-Nhf"/>
                             <constraint firstItem="HHh-aT-RvN" firstAttribute="top" secondItem="C6t-AE-tTR" secondAttribute="bottom" constant="8" symbolic="YES" id="nme-hs-9sD"/>
-                            <constraint firstItem="fLT-AI-35N" firstAttribute="trailing" secondItem="NoJ-j4-ARx" secondAttribute="trailing" constant="20" id="pVm-an-Nw9"/>
+                            <constraint firstItem="GFQ-3S-9o1" firstAttribute="leading" secondItem="fLT-AI-35N" secondAttribute="leading" constant="20" id="rs7-iZ-zmr"/>
                             <constraint firstItem="HHh-aT-RvN" firstAttribute="leading" secondItem="fLT-AI-35N" secondAttribute="leading" constant="20" id="tH8-Sd-wPV"/>
                         </constraints>
                     </view>

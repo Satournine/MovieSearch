@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class MovieDetailViewController: UIViewController {
     
@@ -35,6 +36,8 @@ class MovieDetailViewController: UIViewController {
         networkManager.getDetails(detailsOf: movieName) { result in
             switch result{
             case .success(let data):
+                let imgURL = URL(string: data.Poster)
+                self.moviePoster.kf.setImage(with: imgURL)
                 self.movieNameLabel.text = data.Title
                 self.movieGenreLabel.text = "Genre: \(data.Genre)"
                 self.movieDescriptionLabel.text = data.Plot
