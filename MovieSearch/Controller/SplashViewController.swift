@@ -15,14 +15,14 @@ class SplashViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         // Check internet connectivity
-        if !checkInternetConnectivity() {
-            let alert = UIAlertController(title: "No Internet Connection", message: "Please check your internet connection and try again.", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
-                exit(0)
-            }))
-            self.present(alert, animated: true, completion: nil)
-            return
-        }
+//        if !checkInternetConnectivity() {
+//            let alert = UIAlertController(title: "No Internet Connection", message: "Please check your internet connection and try again.", preferredStyle: .alert)
+//            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+//                exit(0)
+//            }))
+//            self.present(alert, animated: true, completion: nil)
+//            return
+//        }
         
         // Wait for 3 seconds before presenting the main screen
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
@@ -34,7 +34,7 @@ class SplashViewController: UIViewController {
             self.present(navigationController, animated: true, completion: nil)
         }
     }
-    
+    // Function to check internet connectivity
     func checkInternetConnectivity() -> Bool {
         let monitor = NWPathMonitor()
         var isConnected = false

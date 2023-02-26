@@ -10,7 +10,7 @@ import Kingfisher
 
 class MovieDetailViewController: UIViewController {
     
-    let networkManager = NetworkManager()
+    let networkManager = NetworkManager() // Instantiate the NetworkManager for making API requests
     
     @IBOutlet weak var moviePoster: UIImageView!
     @IBOutlet weak var movieNameLabel: UILabel!
@@ -21,7 +21,7 @@ class MovieDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // Set default values for the UI elements
 //        movieNameLabel.text = "Movie Name"
 //        moviePoster.backgroundColor = .gray
 //        movieGenreLabel.text = "GenreGenre, Genre, GenreGenre"
@@ -31,11 +31,12 @@ class MovieDetailViewController: UIViewController {
       
     }
     
+    // Update the UI with movie details using the provided movie name
     func updateUI(movieName: String){
         
         networkManager.getDetails(detailsOf: movieName) { result in
             switch result{
-            case .success(let data):
+            case .success(let data): // If the API request is successful, update the UI with the retrieved movie details
                 let imgURL = URL(string: data.Poster)
                 self.moviePoster.kf.setImage(with: imgURL)
                 self.movieNameLabel.text = data.Title
@@ -45,7 +46,7 @@ class MovieDetailViewController: UIViewController {
                     self.movieDirectorLabel.text = "Creator: \(data.Writer)"
                 }
                 
-                
+                // If the API request fails, display an error message and dismiss the view controller
             case .failure(let error):
                 debugPrint(error)
                 self.movieNameLabel.text = nil
