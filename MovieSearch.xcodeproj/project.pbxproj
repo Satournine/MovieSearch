@@ -10,6 +10,7 @@
 		5F629FF27CF0EFEE3220B805 /* Pods_MovieSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5008F3FA0B93A8F737698EFE /* Pods_MovieSearch.framework */; };
 		CE2FF88629AA0D59004CE8FF /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2FF88529AA0D59004CE8FF /* MovieDetailViewController.swift */; };
 		CE3487B429AA50C100204E0E /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3487B329AA50C100204E0E /* Details.swift */; };
+		CEA2897329ABCC9700CFF1BF /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA2897229ABCC9700CFF1BF /* SplashViewController.swift */; };
 		CED821C929A82263007DBC6F /* MoviesSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED821C829A82263007DBC6F /* MoviesSearchTableViewCell.swift */; };
 		CEE4C67B29A7AF940012A582 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4C67A29A7AF940012A582 /* AppDelegate.swift */; };
 		CEE4C67D29A7AF940012A582 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4C67C29A7AF940012A582 /* SceneDelegate.swift */; };
@@ -19,6 +20,7 @@
 		CEE4C68729A7AF940012A582 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE4C68529A7AF940012A582 /* LaunchScreen.storyboard */; };
 		CEE8812D29A7EA3C00EAA2E7 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8812C29A7EA3C00EAA2E7 /* Movies.swift */; };
 		CEE8813029A7ED2F00EAA2E7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8812F29A7ED2F00EAA2E7 /* NetworkManager.swift */; };
+		CEED801129AB9CFA00F37823 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEED801029AB9CFA00F37823 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,7 @@
 		8CDFD286BE5DE44BCCD89E51 /* Pods-MovieSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieSearch.debug.xcconfig"; path = "Target Support Files/Pods-MovieSearch/Pods-MovieSearch.debug.xcconfig"; sourceTree = "<group>"; };
 		CE2FF88529AA0D59004CE8FF /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		CE3487B329AA50C100204E0E /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
+		CEA2897229ABCC9700CFF1BF /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		CED821C829A82263007DBC6F /* MoviesSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesSearchTableViewCell.swift; sourceTree = "<group>"; };
 		CEE4C67729A7AF940012A582 /* MovieSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE4C67A29A7AF940012A582 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +41,7 @@
 		CEE4C68829A7AF940012A582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEE8812C29A7EA3C00EAA2E7 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		CEE8812F29A7ED2F00EAA2E7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CEED801029AB9CFA00F37823 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,10 +99,11 @@
 				CEE4C67C29A7AF940012A582 /* SceneDelegate.swift */,
 				CEE8812E29A7EA3F00EAA2E7 /* Model */,
 				CEE8812B29A7E5BC00EAA2E7 /* Controller */,
+				CED821CA29A82274007DBC6F /* View */,
 				CEE4C68329A7AF940012A582 /* Assets.xcassets */,
 				CEE4C68529A7AF940012A582 /* LaunchScreen.storyboard */,
 				CEE4C68829A7AF940012A582 /* Info.plist */,
-				CED821CA29A82274007DBC6F /* View */,
+				CEED801029AB9CFA00F37823 /* GoogleService-Info.plist */,
 			);
 			path = MovieSearch;
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 			children = (
 				CE2FF88529AA0D59004CE8FF /* MovieDetailViewController.swift */,
 				CEE4C67E29A7AF940012A582 /* MainScreenController.swift */,
+				CEA2897229ABCC9700CFF1BF /* SplashViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -191,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEE4C68729A7AF940012A582 /* LaunchScreen.storyboard in Resources */,
+				CEED801129AB9CFA00F37823 /* GoogleService-Info.plist in Resources */,
 				CEE4C68429A7AF940012A582 /* Assets.xcassets in Resources */,
 				CEE4C68229A7AF940012A582 /* Main.storyboard in Resources */,
 			);
@@ -248,6 +255,7 @@
 				CEE4C67F29A7AF940012A582 /* MainScreenController.swift in Sources */,
 				CEE4C67B29A7AF940012A582 /* AppDelegate.swift in Sources */,
 				CED821C929A82263007DBC6F /* MoviesSearchTableViewCell.swift in Sources */,
+				CEA2897329ABCC9700CFF1BF /* SplashViewController.swift in Sources */,
 				CEE8813029A7ED2F00EAA2E7 /* NetworkManager.swift in Sources */,
 				CE2FF88629AA0D59004CE8FF /* MovieDetailViewController.swift in Sources */,
 				CEE8812D29A7EA3C00EAA2E7 /* Movies.swift in Sources */,
@@ -404,7 +412,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MovieSearch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -413,7 +421,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tunaorkun.MovieSearch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tunaorkun.MovieSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -433,7 +441,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MovieSearch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -442,7 +450,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tunaorkun.MovieSearch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tunaorkun.MovieSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

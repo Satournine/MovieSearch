@@ -24,7 +24,7 @@ class MainScreenController: UITableViewController, UISearchResultsUpdating {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Main Screen"
+        title = "MovieSearch"
         setupSearchController()
         
     }
@@ -50,6 +50,7 @@ class MainScreenController: UITableViewController, UISearchResultsUpdating {
                     }
                 case .failure(let error):
                     print("Failed to get search results: \(error)")
+
                 }
             }
         }

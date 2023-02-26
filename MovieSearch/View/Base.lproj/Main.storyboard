@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Main Screen-->
         <scene sceneID="IoP-4o-r1i">
             <objects>
                 <tableViewController storyboardIdentifier="MainScreenView" id="CD0-xp-XcL" customClass="MainScreenController" customModule="MovieSearch" customModuleProvider="target" sceneMemberID="viewController">
@@ -50,7 +50,7 @@
                             <outlet property="delegate" destination="CD0-xp-XcL" id="D6b-MX-KhY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="b87-zZ-UOt"/>
+                    <navigationItem key="navigationItem" title="Main Screen" id="b87-zZ-UOt"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcP-RE-oUF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -140,6 +140,33 @@
             </objects>
             <point key="canvasLocation" x="1198.5507246376812" y="-216.29464285714286"/>
         </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="ERJ-w9-Rb6">
+            <objects>
+                <viewController id="8hj-8j-iQf" customClass="SplashViewController" customModule="MovieSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pyy-uf-Y5d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PINSOFT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKo-7b-PoA">
+                                <rect key="frame" x="131" y="428" width="152" height="40.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="35"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zkF-ww-D8n"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nKo-7b-PoA" firstAttribute="centerY" secondItem="pyy-uf-Y5d" secondAttribute="centerY" id="gBg-k5-Jgb"/>
+                            <constraint firstItem="nKo-7b-PoA" firstAttribute="centerX" secondItem="pyy-uf-Y5d" secondAttribute="centerX" id="gv8-Cv-pD1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mvu-r8-93L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1380" y="-216"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="SBL-WD-ft9">
             <objects>
@@ -160,6 +187,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

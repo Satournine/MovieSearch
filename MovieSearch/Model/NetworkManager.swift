@@ -7,6 +7,7 @@
 
 import Foundation
 import Alamofire
+import FirebaseAnalytics
 
 class NetworkManager: ObservableObject{
     
@@ -46,10 +47,22 @@ class NetworkManager: ObservableObject{
         AF.request(url).responseDecodable(of: Details.self){ response in
             switch response.result{
             case .success(let data):
+                Analytics.logEvent("Movie_Detail_Screen_Called", parameters: [
+                    "Movie_Title": data.Title,
+                    "Movie_Genre": data.Genre,
+                    "Movie_Director": data.Director])
                 completion(.success(data))
             case .failure(let error):
+                Analytics.logEvent("Movie_Detail_Screen_Called", parameters: [
+                    "Get_Detail_Failure": "failure",
+                    ])
+                
+                
+                
                 completion(.failure(error))
-
+                
+            
+                    
             }
 
             

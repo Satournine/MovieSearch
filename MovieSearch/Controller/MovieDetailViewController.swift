@@ -22,11 +22,11 @@ class MovieDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        movieNameLabel.text = "Movie Name"
-        moviePoster.backgroundColor = .gray
-        movieGenreLabel.text = "GenreGenre, Genre, GenreGenre"
-        movieDescriptionLabel.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        movieDirectorLabel.text = "Director Name Surname"
+//        movieNameLabel.text = "Movie Name"
+//        moviePoster.backgroundColor = .gray
+//        movieGenreLabel.text = "GenreGenre, Genre, GenreGenre"
+//        movieDescriptionLabel.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+//        movieDirectorLabel.text = "Director Name Surname"
         
       
     }
@@ -47,7 +47,18 @@ class MovieDetailViewController: UIViewController {
                 
                 
             case .failure(let error):
-                print(error)
+                debugPrint(error)
+                self.movieNameLabel.text = nil
+                self.movieGenreLabel.text = nil
+                self.movieDescriptionLabel.text = nil
+                self.movieDirectorLabel.text = nil
+                let alertController = UIAlertController(title: "Oops", message: "Failed to fetch details", preferredStyle: .alert)
+                let popAction = UIAlertAction(title: "OK", style: .default){ _ in
+                    self.dismiss(animated: true, completion: nil)
+                }
+                alertController.addAction(popAction)
+                self.present(alertController, animated: true)
+                
             }
         
         }

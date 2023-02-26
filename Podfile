@@ -8,5 +8,5 @@ target 'MovieSearch' do
   # Pods for MovieSearch
   pod "Alamofire"
   pod "Kingfisher"
-
+  pod "Firebase/Analytics" 
 end
