@@ -10,9 +10,12 @@ import UIKit
 class MoviesSearchTableViewCell: UITableViewCell {
 
     @IBOutlet weak var movieNameLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        setLabelAppearance()
+        
+
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -20,5 +23,20 @@ class MoviesSearchTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    fileprivate func setLabelAppearance() {
+        // Initialization code
+        movieNameLabel.layer.cornerRadius = 10
+        movieNameLabel.layer.borderWidth = 1.0
+        movieNameLabel.layer.masksToBounds = true
+        if #available(iOS 13.0, *) {
+                let isDarkMode = self.traitCollection.userInterfaceStyle == .dark
+                movieNameLabel.layer.borderColor = isDarkMode ? UIColor.systemIndigo.cgColor : UIColor.purple.cgColor
+            } else {
+                movieNameLabel.layer.borderColor = UIColor.systemPurple.cgColor
+            }
+        
+    }
+
 
 }

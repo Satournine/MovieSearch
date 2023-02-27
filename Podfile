@@ -8,5 +8,6 @@ target 'MovieSearch' do
   # Pods for MovieSearch
   pod "Alamofire"
   pod "Kingfisher"
-  pod "Firebase/Analytics" 
+  pod "Firebase/Analytics"
+  pod "IQKeyboardManagerSwift"
 end

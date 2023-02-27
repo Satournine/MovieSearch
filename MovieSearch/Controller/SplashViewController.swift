@@ -15,7 +15,7 @@ class SplashViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         // Check internet connectivity
-        if !checkInternetConnectivity() {
+        if checkInternetConnectivity() {
             let alert = UIAlertController(title: "No Internet Connection", message: "Please check your internet connection and try again.", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
                 exit(0)

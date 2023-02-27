@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 import FirebaseAnalytics
 
-class NetworkManager: ObservableObject{
+final class NetworkManager: ObservableObject{
     // Declaring two published variables that will hold search and details information
     @Published var movie = [Search]()
     @Published var details = [Details]()

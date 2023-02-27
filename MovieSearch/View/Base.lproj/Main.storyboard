@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dnr-Jr-G60">
-    <device id="retina4_7" orientation="portrait" appearance="dark"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -14,19 +14,19 @@
             <objects>
                 <tableViewController storyboardIdentifier="MainScreenView" id="CD0-xp-XcL" customClass="MainScreenController" customModule="MovieSearch" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="RbG-l8-RI4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="72" id="U27-ni-tHg" customClass="MoviesSearchTableViewCell" customModule="MovieSearch" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="375" height="72"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="72" id="U27-ni-tHg" customClass="MoviesSearchTableViewCell" customModule="MovieSearch" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="414" height="72"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U27-ni-tHg" id="wQg-Jz-VMu">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="72"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gS4-ay-yXQ">
-                                            <rect key="frame" x="16" y="11" width="343" height="45"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gS4-ay-yXQ">
+                                            <rect key="frame" x="20" y="11" width="374" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="45" id="EDz-6O-QRx"/>
                                             </constraints>
@@ -39,6 +39,7 @@
                                         <constraint firstItem="gS4-ay-yXQ" firstAttribute="top" secondItem="wQg-Jz-VMu" secondAttribute="topMargin" id="12i-ds-Qn5"/>
                                         <constraint firstItem="gS4-ay-yXQ" firstAttribute="leading" secondItem="wQg-Jz-VMu" secondAttribute="leadingMargin" id="4go-Py-I24"/>
                                         <constraint firstItem="gS4-ay-yXQ" firstAttribute="trailing" secondItem="wQg-Jz-VMu" secondAttribute="trailingMargin" id="7hG-XB-VHu"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="gS4-ay-yXQ" secondAttribute="bottom" id="XUz-Q7-her"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -62,17 +63,17 @@
             <objects>
                 <viewController storyboardIdentifier="MovieDetailView" id="yb4-r0-f9C" customClass="MovieDetailViewController" customModule="MovieSearch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ijz-Jn-nby">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ptA-R7-TVW">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="kKN-wY-abj"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="C6t-AE-tTR">
-                                <rect key="frame" x="20" y="408" width="335" height="45"/>
+                                <rect key="frame" x="20" y="408" width="374" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="ibZ-G4-PRU"/>
                                 </constraints>
@@ -81,29 +82,29 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHh-aT-RvN">
-                                <rect key="frame" x="20" y="461" width="335" height="20"/>
+                                <rect key="frame" x="20" y="461" width="374" height="18"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="XIA-7t-u7R"/>
+                                    <constraint firstAttribute="height" constant="18" id="XIA-7t-u7R"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="DamascusLight" family="Damascus" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="DamascusLight" family="Damascus" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NoJ-j4-ARx">
-                                <rect key="frame" x="20" y="489" width="335" height="75"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="NoJ-j4-ARx">
+                                <rect key="frame" x="20" y="487" width="374" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="YHi-AY-uME"/>
+                                    <constraint firstAttribute="height" constant="100" id="YHi-AY-uME"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFQ-3S-9o1">
-                                <rect key="frame" x="20" y="572" width="335" height="30"/>
+                                <rect key="frame" x="20" y="595" width="374" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="htO-5x-Pxw"/>
+                                    <constraint firstAttribute="height" constant="25" id="htO-5x-Pxw"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -146,11 +147,11 @@
             <objects>
                 <viewController id="8hj-8j-iQf" customClass="SplashViewController" customModule="MovieSearch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pyy-uf-Y5d">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PINSOFT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKo-7b-PoA">
-                                <rect key="frame" x="111.5" y="313.5" width="152" height="40.5"/>
+                                <rect key="frame" x="131" y="428" width="152" height="40.5"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="35"/>
                                 <color key="textColor" systemColor="systemBlueColor"/>
                                 <nil key="highlightedColor"/>
@@ -174,7 +175,7 @@
             <objects>
                 <navigationController id="Dnr-Jr-G60" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7qT-0D-pZe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

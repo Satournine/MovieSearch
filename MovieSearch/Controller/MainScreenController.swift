@@ -20,7 +20,6 @@ class MainScreenController: UITableViewController, UISearchBarDelegate {
     private var selectedMovie: Search? // Private variable to hold the selected movie
     var networkManager = NetworkManager() // Instantiate a NetworkManager object to make API calls
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "MovieSearch"
@@ -28,6 +27,8 @@ class MainScreenController: UITableViewController, UISearchBarDelegate {
         
         
     }
+    
+
     //  method to set up the search bar in the navigation bar
     private func setupSearchController(){
         let search = UISearchController(searchResultsController: nil)
